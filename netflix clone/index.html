@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+
+    <div class="nav" id="nav">
+        <img src="images/Logonetflix.png" alt="" class="nav_logo">
+        <img src="images/avatar.png" alt="" class="nav_avatar">
+    </div>
+
+    <!-- Banner -->
+    <div class="banner" id = "banner">
+
+        <video id = "video" class = "banner" poster = "images/videoframe.jpg" style="pointer-events: none;">
+        <source src="images/new_banner.mp4" type="video/mp4" /></video>
+
+        <div class="banner_contents">
+
+            <h1 class = banner_title>Mr.Robot</h1>
+
+            <div class="banner_buttons">
+                <button class="banner_button" id="btnPlayPause" accesskey="p" onclick="playPauseVideo()">Play</button>
+                <button class="banner_button">My list</button>
+            </div>
+
+            <div class="banner_description">
+                Mr.Robot follows Elliot Alderson (Rami Malek), a cyber-security engineer who, along with Mr. Robot (Christian Slater) and fsociety, starts a revolution to change the world. Season 4 will pick up where the third season finale left off, delving into the pros and cons of Elliot hitting “send” on the email that could reverse.
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Netflix Originals -->
+    
+    <div class="row">
+        <h2>Netflix Orjinal Yapımları</h2>
+        <div class="row_posters">
+            <img src="images/orjinals/dik1.jpg" alt="" class = "row_poster row_poster_Large">
+            <img src="images/orjinals/dik2.jpg" alt="" class = "row_poster row_poster_Large">
+            <img src="images/orjinals/dik3.jpg" alt="" class = "row_poster row_poster_Large">
+            <img src="images/orjinals/dik4.jpg" alt="" class = "row_poster row_poster_Large">
+            <img src="images/orjinals/dik5.jpg" alt="" class = "row_poster row_poster_Large">
+            <img src="images/orjinals/dik6.jpg" alt="" class = "row_poster row_poster_Large">
+            <img src="images/orjinals/dik7.jpg" alt="" class = "row_poster row_poster_Large">
+            <img src="images/orjinals/dik8.jpg" alt="" class = "row_poster row_poster_Large">
+        </div>
+    </div>
+
+    <!-- popular -->
+
+    <div class="row">
+        <h2>Netflixte Popüler</h2>
+        <div class="row_posters">
+            <img src="images/populer/1.jpg" alt="" class = "row_poster " >
+            <img src="images/populer/2.jpg" alt="" class = "row_poster ">
+            <img src="images/populer/3.jpg" alt="" class = "row_poster ">
+            <img src="images/populer/4.jpg" alt="" class = "row_poster ">
+            <img src="images/populer/5.jpg" alt="" class = "row_poster ">
+            <img src="images/populer/6.jpg" alt="" class = "row_poster ">
+            <img src="images/populer/7.jpg" alt="" class = "row_poster ">
+            <img src="images/populer/8.jpg" alt="" class = "row_poster ">
+            <img src="images/populer/9.jpg" alt="" class = "row_poster ">
+            <img src="images/populer/10.jpg" alt="" class = "row_poster ">
+        </div>
+    </div>
+
+    <!-- sci-fi -->
+
+    <div class="row">
+        <h2>Bilim Kurgu Filmleri</h2>
+        <div class="row_posters">
+            <img src="images/bilimmkurgu/1.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/2.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/3.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/4.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/5.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/6.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/7.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/8.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/9.jpg" alt="" class = "row_poster ">
+            <img src="images/bilimmkurgu/10.jpg" alt="" class = "row_poster ">
+        </div>
+    </div>
+
+    <!-- tv comedy -->
+    
+    <div class="row">
+        <h2>Tv Komedileri</h2>
+        <div class="row_posters">
+            <img src="images/tvkomedi/1.jpg" alt="" class = "row_poster ">
+            <img src="images/tvkomedi/2.jpg" alt="" class = "row_poster ">
+            <img src="images/tvkomedi/3.jpg" alt="" class = "row_poster ">
+            <img src="images/tvkomedi/4.jpg" alt="" class = "row_poster ">
+            <img src="images/tvkomedi/5.jpg" alt="" class = "row_poster ">
+            <img src="images/tvkomedi/6.jpg" alt="" class = "row_poster ">
+            <img src="images/tvkomedi/7.jpg" alt="" class = "row_poster ">
+            <img src="images/tvkomedi/8.jpg" alt="" class = "row_poster ">
+            <img src="images/tvkomedi/9.jpg" alt="" class = "row_poster ">
+        </div>
+    </div>
+
+     <!-- Horror Movies -->
+    
+     <div class="row">
+        <h2>Korku Filmeleri</h2>
+        <div class="row_posters">
+            <img src="images/korku/1.jpg" alt="" class = "row_poster ">
+            <img src="images/korku/2.jpg" alt="" class = "row_poster ">
+            <img src="images/korku/3.jpg" alt="" class = "row_poster ">
+            <img src="images/korku/4.jpg" alt="" class = "row_poster ">
+            <img src="images/korku/5.jpg" alt="" class = "row_poster ">
+            <img src="images/korku/6.jpg" alt="" class = "row_poster ">
+            
+        </div>
+    </div>
+
+     <!-- Romance Movies -->
+    
+     <div class="row">
+        <h2>Durum Komedileri</h2>
+        <div class="row_posters">
+            <img src="images/komedi/1.jpg" alt="" class = "row_poster ">
+            <img src="images/komedi/2.jpg" alt="" class = "row_poster ">
+            <img src="images/komedi/3.jpg" alt="" class = "row_poster ">
+            <img src="images/komedi/4.jpg" alt="" class = "row_poster ">
+            <img src="images/komedi/5.jpg" alt="" class = "row_poster ">
+            <img src="images/komedi/6.jpg" alt="" class = "row_poster ">
+            <img src="images/komedi/7.jpg" alt="" class = "row_poster ">
+            <img src="images/komedi/8.jpg" alt="" class = "row_poster ">
+            <img src="images/komedi/9.jpg" alt="" class = "row_poster ">
+        </div>
+    </div>
+
+     <!-- Documentaries -->
+    
+     <div class="row">
+        <h2>Belgeseller</h2>
+        <div class="row_posters">
+            <img src="images/belgesel/1.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/2.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/3.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/4.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/5.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/6.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/7.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/8.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/9.jpg" alt="" class = "row_poster ">
+            <img src="images/belgesel/10.jpg" alt="" class = "row_poster ">
+        </div>
+    </div>
+
+
+    <script>
+        player = document.getElementById('video');
+        btnPlayPause = document.getElementById('btnPlayPause');
+    
+        player.addEventListener('play', function(){
+            changeButtonType(btnPlayPause, 'Pause')
+        }, false);
+    
+        player.addEventListener('pause', function(){
+            changeButtonType(btnPlayPause, 'Play')
+        }, false);
+    
+        function playPauseVideo(){
+            if(player.paused || player.ended){
+                changeButtonType(btnPlayPause,'Pause');
+                player.play();
+            }else
+            {
+                changeButtonType(btnPlayPause,'Play'); 
+                player.pause();
+            }
+        }
+    
+        function changeButtonType(btn, value){
+            btn.title = value;
+            btn.innerHTML = value;
+        }
+    
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if(window.scrollY>=100){
+                nav.classList.add('nav_black');
+            }
+            else
+            {
+                nav.classList.remove('nav_black');
+            }
+        })
+    </script>
+
+    <!-- Proje Hakkında -->
+    <div class="project_info">
+        
+      <h2>Tarih 05.08.2022 01:49
+        Hazırlayan Orhan Kılıç
+        Netflix Clone
+      </h2>
+        
+    </div>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111;
+}
+
+.row_poster{
+    width: auto;
+    object-fit: contain;
+    max-height: 200px;
+    margin-right: 15px;
+    transition: transform 0.6s;
+}
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-left: -42px;
+    padding-left: 42px;
+    margin-top: 20px;
+  
+}
+.row_poster:hover{
+    transform: scale(1.08);
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_poster_Large{
+    max-height: 300px;
+}
+
+.row_poster_Large:hover{
+    transform: scale(1.09);
+}
+
+.row{
+    color: #fff;
+    margin-left: 30px;
+    padding-top: 70px;
+}
+
+.first{
+    margin-top: 10%;
+}
+
+.banner{
+    position: relative;
+    color: #fff;
+    object-fit: cover;
+    height: 550px;
+    width: 100%;
+}
+
+#banner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #111);      
+}
+
+.banner_contents{
+    position: relative;
+    margin-left: 30px;
+    height: 190px;
+    margin-top: -19%;
+}
+
+.banner_title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 0.3rem;
+}
+
+.banner_description{
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    max-width: 660px;
+    height: 180px;
+}
+
+.banner_button{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 800;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner_button:hover{
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+.nav_logo{
+    width: 120px;
+    object-fit: contain;
+}
+
+.nav_avatar{
+    width: 40px;
+    object-fit: contain;
+}
+
+.nav{
+    position: fixed;
+    text-outline: 0 0 #000;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav_black{
+    background-color: #111;
+
+}
+
+.project_info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f3ea6d ;
+    padding: 10px;
+    width: 350px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif ;
+    border-radius: 3vw;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    transition: transform 450ms;
+    
+}
+.project_info:hover{
+    transform: scale(1.08);
+}
